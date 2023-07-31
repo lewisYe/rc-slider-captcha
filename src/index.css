@@ -1,0 +1,128 @@
+.rc-slider-captcha {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #212325;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.rc-slider-captcha-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.rc-slider-captcha-content {
+  padding: 16px;
+}
+
+.rc-slider-captcha-loading{
+  width: 295px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rc-slider-captcha-imgs {
+  position: relative;
+  font-size: 0;
+}
+
+.rc-slider-captcha-bg-img {
+  width: 295px;
+  height: 180px;
+}
+
+.rc-slider-captcha-slider-img {
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rc-slider-captcha-refresh {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rc-slider-move {
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  position: relative;
+  background-color: #333336;
+  border-radius: 4px;
+}
+
+.rc-slider-move-track {
+  color: #F8F8F8;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.rc-slider-move-track span {
+  padding-left: 40px;
+}
+
+.rc-slider-move-thumb {
+  width: 40px;
+  height: 100%;
+  background-color: #7458F5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.rc-slider-move-thumb img {
+  width: 40px;
+  height: 40px;
+}
+
+.rc-slider-move-thumb.error {
+  background-color: #F04444;
+}
+
+.rc-slider-move-thumb.success {
+  background-color: #48AC58;
+}
+
+.rc-slider-move-percent {
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.rc-slider-move-percent.progress {
+  background: linear-gradient(270deg, rgba(113, 73, 226, 0.7) 0%, rgba(130, 150, 235, 0.7) 100%);
+}
+
+.rc-slider-move-percent.error {
+  background: rgba(240, 68, 68, 0.40);
+}
+.rc-slider-move-percent.success {
+  background: rgba(72, 172, 88, 0.40);
+}
