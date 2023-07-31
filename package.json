@@ -1,5 +1,5 @@
 {
-  "name": "star-slider-captcha",
+  "name": "rc-slider-captcha",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/bundle.cjs.js",

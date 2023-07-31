@@ -20,18 +20,18 @@ export interface CaptchaData {
   tpImage: string;
 }
 
-export interface verifyCaptcha {
-  id: string,
-  bgImageWidth: number,
-  bgImageHeight: number,
-  startTime: number,
-  endTime: number,
-  trackPointList: Track[],
+export interface VerifyParams {
+  id: string;
+  bgImageWidth: number;
+  bgImageHeight: number;
+  startTime: number;
+  endTime: number;
+  trackPointList: Track[];
 }
 
 export interface SliderCaptchaType {
   genCaptcha: () => CaptchaData;
-  verifyCaptcha: (params: verifyCaptcha) => boolean;
+  verifyCaptcha: (params: VerifyParams) => boolean;
   onSuccess?: (id: string) => void;
   tipText: string;
   hasRefresh: boolean;
