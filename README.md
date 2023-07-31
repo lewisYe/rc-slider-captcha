@@ -1,6 +1,6 @@
-# star-slider
+# Slider Captcha
 
-React slider captcha componnet
+React slider captcha componnet.
 
 ## Getting started
 
