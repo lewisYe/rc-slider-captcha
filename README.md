@@ -1,6 +1,6 @@
 # star-slider
 
-React star rating component
+React slider captcha componnet
 
 ## Getting started
 
